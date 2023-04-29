@@ -1,32 +1,41 @@
-
 import styled from 'styled-components';
+import { Form, Field, ErrorMessage } from 'formik';
 
-export const StyledButton = styled.button`
+export const FormBox = styled(Form)`
+  display: flex;
+  flex-direction: column;
+  /* width: ${p => p.theme.sizes.m}; */
+`;
+
+export const Label = styled.label`
+  margin-bottom: ${p => p.theme.space[3]}px;
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.primary};
+`;
+
+export const Input = styled(Field)`
+  min-width: ${p => p.theme.sizes.s};
   padding: ${p => p.theme.space[3]}px;
-  color: ${p => p.theme.colors.white};
-  background-color: ${p => p.theme.colors.accent};
-  font-family: inherit;
-  font-weight: ${p => p.theme.fontWeights.bold};
-  font-size: ${p => p.theme.fontSizes.m};
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: ${p => p.theme.borders.normal};
+  border-color: ${p => p.theme.colors.border};
   border-radius: ${p => p.theme.radii.normal};
-  border-width: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  :focus {
+    border-color: ${p => p.theme.colors.accent};
+  }
+`;
 
-  :hover:not(:disabled), :focus:not(:disabled) {
-    background-color: ${p => p.theme.colors.hover};
-  }
+export const FormError = ({ name }) => {
+  return (
+    <ErrorMessage
+      name={name}
+      render={message => <ErrorText>{message}</ErrorText>}
+    />
+  );
+};
 
-  &:disabled {
-    opacity: 0.4;
-    cursor: initial;
-  }
-  
-  svg {
-    @media screen and (min-width: 768px) {
-      margin-right: ${prop => prop.theme.space[2]}px;
-      vertical-align: bottom;
-    }
-  }
+const ErrorText = styled.span`
+  font-size: ${p => p.theme.fontSizes.xs};
+  color: ${p => p.theme.colors.red};
 `;

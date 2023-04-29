@@ -1,5 +1,5 @@
 import {
-  StyledTeam,
+  Section,
   SubTitle,
   Title,
   StyledImageGrid,
@@ -28,7 +28,7 @@ import webp32x from '../../images/team/person3@2x.webp';
 const Team = () => {
   return (
     <Container>
-      <StyledTeam>
+      <Section id="team">
         <Box pb={8}>
           <SubTitle>Who we are</SubTitle>
           <Title>Our Professional Team</Title>
@@ -98,7 +98,7 @@ const Team = () => {
             </Box>
           </div>
         </StyledImageGrid>
-      </StyledTeam>
+      </Section>
     </Container>
   );
 };

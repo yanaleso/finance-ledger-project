@@ -1,7 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import 'lightbox2/dist/css/lightbox.css';
 
 export const GlobalStyle = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
   body {
     margin: 0;
     font-family: ${p => p.theme.fonts.body};

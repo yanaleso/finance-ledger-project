@@ -1,4 +1,4 @@
-import { StyledCases, SubTitle, Title, StyledImageGrid } from './Cases.styled';
+import { Section, SubTitle, Title, StyledImageGrid } from './Cases.styled';
 import { Box } from '../Box';
 
 import jpg11x from '../../images/cases/cases1.jpg';
@@ -30,7 +30,7 @@ import Container from '../Container/Container';
 const Cases = () => {
   return (
     <Container>
-      <StyledCases>
+      <Section id="cases">
         <Box pb={6}>
           <SubTitle>This is what we do</SubTitle>
           <Title>Business Cases</Title>
@@ -40,43 +40,103 @@ const Cases = () => {
           </SubTitle>
         </Box>
         <StyledImageGrid>
-          <picture>
-            <source srcSet={`${webp11x} 1x, ${webp12x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg11x} 1x, ${jpg12x} 2x`} />
-            <img src={jpg11x} alt="People" />
-          </picture>
+          <a
+            href={jpg11x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp11x} 1x, ${webp12x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg11x} 1x, ${jpg12x} 2x`} />
+              <img src={jpg11x} alt="People" />
+            </picture>
+          </a>
 
-          <picture>
-            <source srcSet={`${webp21x} 1x, ${webp22x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg21x} 1x, ${jpg22x} 2x`} />
-            <img src={jpg21x} alt="People" />
-          </picture>
+          <a
+            href={jpg21x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp21x} 1x, ${webp22x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg21x} 1x, ${jpg22x} 2x`} />
+              <img src={jpg21x} alt="People" />
+            </picture>
+          </a>
 
-          <picture>
-            <source srcSet={`${webp31x} 1x, ${webp32x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg31x} 1x, ${jpg32x} 2x`} />
-            <img src={jpg31x} alt="People" />
-          </picture>
+          <a
+            href={jpg31x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp31x} 1x, ${webp32x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg31x} 1x, ${jpg32x} 2x`} />
+              <img src={jpg31x} alt="People" />
+            </picture>
+          </a>
 
-          <picture>
-            <source srcSet={`${webp41x} 1x, ${webp42x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg41x} 1x, ${jpg42x} 2x`} />
-            <img src={jpg41x} alt="People" />
-          </picture>
+          <a
+            href={jpg41x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp41x} 1x, ${webp42x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg41x} 1x, ${jpg42x} 2x`} />
+              <img src={jpg41x} alt="People" />
+            </picture>
+          </a>
 
-          <picture>
-            <source srcSet={`${webp51x} 1x, ${webp52x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg51x} 1x, ${jpg52x} 2x`} />
-            <img src={jpg51x} alt="People" />
-          </picture>
+          <a
+            href={jpg51x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp51x} 1x, ${webp52x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg51x} 1x, ${jpg52x} 2x`} />
+              <img src={jpg51x} alt="People" />
+            </picture>
+          </a>
 
-          <picture>
-            <source srcSet={`${webp61x} 1x, ${webp62x} 2x`} type="image/webp" />
-            <source srcSet={`${jpg61x} 1x, ${jpg62x} 2x`} />
-            <img src={jpg61x} alt="People" />
-          </picture>
+          <a
+            href={jpg61x}
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!"
+          >
+            <picture>
+              <source
+                srcSet={`${webp61x} 1x, ${webp62x} 2x`}
+                type="image/webp"
+              />
+              <source srcSet={`${jpg61x} 1x, ${jpg62x} 2x`} />
+              <img src={jpg61x} alt="People" />
+            </picture>
+          </a>
         </StyledImageGrid>
-      </StyledCases>
+      </Section>
     </Container>
   );
 };

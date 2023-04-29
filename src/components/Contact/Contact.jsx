@@ -1,17 +1,13 @@
 // import PropTypes from 'prop-types';
+import Form from '../Form/Form';
 import { } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <>Contact</>
+    <>
+    <Form/>
+    </>
   );
 };
-
-// Contact.propTypes = {
-//   type: PropTypes.string,
-//   width: PropTypes.number,
-//   onClick: PropTypes.func,
-//   children: PropTypes.node,
-// };
 
 export default Contact;

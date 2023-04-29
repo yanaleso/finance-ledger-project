@@ -1,17 +1,14 @@
-// import PropTypes from 'prop-types';
-import {  } from './Footer.styled';
+import { StyledFooter } from './Footer.styled';
+
+import SocialIconsList from '../SocialIconsList';
 
 const Footer = () => {
   return (
-    <>Footer</>
+    <StyledFooter>
+      <SocialIconsList fill="#28a745" />
+      <div>Copyright © 2021 - FinanceLedger</div>
+    </StyledFooter>
   );
 };
-
-// Footer.propTypes = {
-//   type: PropTypes.string,
-//   width: PropTypes.number,
-//   onClick: PropTypes.func,
-//   children: PropTypes.node,
-// };
 
 export default Footer;
