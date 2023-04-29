@@ -7,11 +7,9 @@ export const theme = {
     contactBg: '#f4f4f4',
     formBorder: '#f5f5f5',
     formText: '#808080',
-    footerBg: '#333333',
-    hoverPrimaryBtnBg: '#2ebf4f',
-    hoverSecondaryBtnBg: '#ffffff',
+    footerBg: '#333333'
   },
-  space: [0, 2, 6, 12, 16, 20, 32, 64, 128, 256],
+  space: [0, 2, 6, 12, 16, 20, 32, 56, 128, 256],
   fonts: {
     body: 'Open Sans, sans-serif',
   },
@@ -27,7 +25,7 @@ export const theme = {
   },
   fontWeights: {
     normal: 400,
-    bold: 700,
+    semiBold: 600,
   },
   borders: {
     none: 'none',
@@ -35,6 +33,7 @@ export const theme = {
   },
   radii: {
     none: '0',
+    small: '2px',
     normal: '5px',
   },
   sizes: {

@@ -1,27 +1,14 @@
-// import PropTypes from 'prop-types';
-import { StyledButton } from './Button.styled';
+import { HeroButton, AboutButton, BlogButton, SubmitButton } from './Button.styled';
 
-const Button = ({ type = 'button', children = null, width = null, disabled = false, onClick = () => null }) => {
+const Button = ({ type = 'button', children = null, hero, about, blog, submit, onClick = () => null }) => {
   return (
-    <StyledButton type={type} width={width} onClick={onClick} disabled={disabled}>
-      {children}
-    </StyledButton>
+    <>
+      {hero && <HeroButton onClick={onClick}>{children}</HeroButton>}
+      {about && <AboutButton onClick={onClick}>{children}</AboutButton>}
+      {blog && <BlogButton onClick={onClick}>{children}</BlogButton>}
+      {submit && <SubmitButton onClick={onClick}>{children}</SubmitButton>}
+    </>
   );
 };
-
-// Button.defaultProps = {
-//   disabled: false,
-//   type: 'button',
-//   children: null,
-//   width: null,
-//   onClick: () => null,
-// }
-
-// Button.propTypes = {
-//   type: PropTypes.string,
-//   width: PropTypes.number,
-//   onClick: PropTypes.func,
-//   children: PropTypes.node,
-// };
 
 export default Button;
