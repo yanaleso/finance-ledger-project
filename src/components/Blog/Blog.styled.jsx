@@ -5,6 +5,18 @@ export const Section = styled.section`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
+    max-height: 460px;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  flex-grow: 1;
+  flex-basis: 47%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 

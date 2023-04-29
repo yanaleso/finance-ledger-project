@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledTeam = styled.div`
+export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,6 @@ export const SubTitle = styled.p`
   @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSizes.xs};
   }
-  }
 `;
 
 export const Title = styled.h2`
@@ -26,7 +25,6 @@ export const Title = styled.h2`
   margin-bottom: 24px;
   font-size: ${p => p.theme.fontSizes.xl};
   line-height: ${p => p.theme.lineHeights.m};
-  }
 `;
 
 export const StyledImageGrid = styled.div`
