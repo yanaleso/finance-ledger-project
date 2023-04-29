@@ -5,6 +5,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: ${p => p.theme.fonts.body};
+    font-weight: ${p => p.theme.fontWeights.normal};
+    font-size: ${p => p.theme.fontSizes.xxs};
+    line-height: 1.35;
+    color: ${p => p.theme.colors.primary};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
