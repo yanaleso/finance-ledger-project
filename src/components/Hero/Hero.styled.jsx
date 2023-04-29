@@ -5,6 +5,8 @@ import showcaseWebp1x from '../../images/home/showcase.webp';
 import showcaseWebp2x from '../../images/home/showcase@2x.webp';
 
 export const Section = styled.section`
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   padding-top: 160px;
   padding-bottom: 104px;

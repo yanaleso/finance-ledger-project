@@ -8,13 +8,14 @@ export const StyledButton = styled.button`
   border-radius: ${p => p.theme.radii.normal};
   border-width: 0;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 auto;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const HeroButton = styled(StyledButton)`
+margin: 0 auto;
+align-items: center;
+  gap: 8px;
   background-color: ${p => p.theme.colors.accent};
   font-size: ${p => p.theme.fontSizes.xs};
   line-height: 1.39;

@@ -9,7 +9,7 @@ export const theme = {
     formText: '#808080',
     footerBg: '#333333'
   },
-  space: [0, 2, 6, 12, 16, 20, 32, 56, 128, 256],
+  space: [0, 2, 6, 12, 16, 20, 32, 48, 56, 79, 128, 256],
   fonts: {
     body: 'Open Sans, sans-serif',
   },
@@ -26,6 +26,13 @@ export const theme = {
   fontWeights: {
     normal: 400,
     semiBold: 600,
+  },
+  lineHeights: {
+    xs: '1',
+    s: '1.35',
+    m: '1.375',
+    l: '1.44',
+    xl: '1.5'
   },
   borders: {
     none: 'none',
