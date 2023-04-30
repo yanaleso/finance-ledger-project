@@ -1,7 +1,7 @@
 import Container from '../Container/Container';
 import Button from '../Button/Button';
 import icons from '../../images/icons.svg';
-import { Section, Title, SubTitle} from './Hero.styled';
+import { Section, Title, SubTitle } from './Hero.styled';
 
 const Hero = () => {
   return (
@@ -12,11 +12,12 @@ const Hero = () => {
         <Button hero>
           <svg width="9" height="18">
             <use href={`${icons}#icon-angle-right`}></use>
-          </svg> Read More
+          </svg>{' '}
+          Read More
         </Button>
       </Container>
     </Section>
-  )
+  );
 };
 
 export default Hero;

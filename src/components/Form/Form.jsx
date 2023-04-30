@@ -1,4 +1,4 @@
-import { Formik } from 'formik';
+import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 
 import Button from '../Button/Button';
@@ -13,7 +13,7 @@ import {
   Label,
 } from './Form.styled';
 
-const Form = () => {
+const ContactForm = () => {
   const initialValues = {
     name: '',
     email: '',
@@ -66,4 +66,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default ContactForm;

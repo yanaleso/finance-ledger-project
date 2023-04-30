@@ -1,4 +1,4 @@
-import Form from '../Form';
+import ContactForm from '../Form';
 import Picture from '../Picture/Picture';
 
 import jpg1x from '../../images/home/contact.jpg';
@@ -27,7 +27,7 @@ const Contact = () => {
       </ImageContainer>
       <FormContainer>
         <Title>Request Callback</Title>
-        <Form />
+        <ContactForm />
       </FormContainer>
     </Section>
   );

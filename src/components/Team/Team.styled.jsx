@@ -6,8 +6,8 @@ export const Section = styled.section`
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  padding-top: ${p => p.theme.spaces[20]}px;
-  padding-bottom: ${p => p.theme.spaces[16]}px;
+  padding-top: ${p => p.theme.space[20]}px;
+  padding-bottom: ${p => p.theme.space[16]}px;
   color: ${p => p.theme.colors.secondary};
 `;
 
