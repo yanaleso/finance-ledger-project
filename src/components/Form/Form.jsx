@@ -1,15 +1,17 @@
 import { Formik } from 'formik';
 import * as yup from 'yup';
+
+import Button from '../Button/Button';
+
+import { handleSubmit } from '../../services/netlifyForm';
+
 import {
-  FormBox,
   FieldWrapper,
   InputWrapper,
   FormError,
   Input,
   Label,
 } from './Form.styled';
-import Button from '../Button/Button';
-import { handleSubmit } from '../../services/netlifyForm';
 
 const Form = () => {
   const initialValues = {
@@ -38,7 +40,7 @@ const Form = () => {
         resetForm();
       }}
     >
-      <FormBox name="contact" method="POST">
+      <Form name="contact" method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <FieldWrapper>
           <InputWrapper>
@@ -59,7 +61,7 @@ const Form = () => {
         <Button type="submit" submit>
           Sign up
         </Button>
-      </FormBox>
+      </Form>
     </Formik>
   );
 };

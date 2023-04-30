@@ -5,15 +5,15 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 56px;
-  padding-bottom: 40px;
+  padding-top: ${p => p.theme.space[17]}px;
+  padding-bottom: ${p => p.theme.space[13]}px;
   color: ${p => p.theme.colors.secondary};
   @media screen and (min-width: 768px) {
-    padding-top: 48px;
+    padding-top: ${p => p.theme.space[15]}px;
   }
   @media screen and (min-width: 1360px) {
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: ${p => p.theme.space[23]}px;
+    padding-bottom: ${p => p.theme.space[22]}px;
   }
 `;
 
@@ -26,9 +26,9 @@ export const SubTitle = styled.p`
 `;
 
 export const Title = styled.h2`
-  font-weight: 400;
-  margin-top: ${p => p.theme.space[4]}px;
-  margin-bottom: 24px;
+  font-weight: ${p => p.theme.fontWeights.normal};
+  margin-top: ${p => p.theme.space[5]}px;
+  margin-bottom: ${p => p.theme.space[6]}px;
   font-size: ${p => p.theme.fontSizes.xl};
   line-height: ${p => p.theme.lineHeights.m};
 `;
@@ -36,14 +36,14 @@ export const Title = styled.h2`
 export const StyledImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 8px;
+  gap: ${p => p.theme.space[2]}px;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: ${p => p.theme.space[6]}px;
   }
 
   @media screen and (min-width: 1360px) {
-    gap: 22px;
+    gap: ${p => p.theme.space[8]}px;
   }
 `;

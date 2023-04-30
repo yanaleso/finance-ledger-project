@@ -1,4 +1,11 @@
 import Form from '../Form';
+import Picture from '../Picture/Picture';
+
+import jpg1x from '../../images/home/contact.jpg';
+import jpg2x from '../../images/home/contact@2x.jpg';
+import webp1x from '../../images/home/contact.webp';
+import webp2x from '../../images/home/contact@2x.webp';
+
 import {
   Section,
   FormContainer,
@@ -6,20 +13,17 @@ import {
   ImageContainer,
 } from './Contact.styled';
 
-import jpg1x from '../../images/home/contact.jpg';
-import jpg2x from '../../images/home/contact@2x.jpg';
-import webp1x from '../../images/home/contact.webp';
-import webp2x from '../../images/home/contact@2x.webp';
-
 const Contact = () => {
   return (
     <Section id="contact">
       <ImageContainer>
-        <picture>
-          <source srcSet={`${webp1x} 1x, ${webp2x} 2x`} type="image/webp" />
-          <source srcSet={`${jpg1x} 1x, ${jpg2x} 2x`} />
-          <img src={jpg1x} alt="Contact" />
-        </picture>
+        <Picture
+          jpg1x={jpg1x}
+          jpg2x={jpg2x}
+          webp1x={webp1x}
+          webp2x={webp2x}
+          alt="Contact"
+        />
       </ImageContainer>
       <FormContainer>
         <Title>Request Callback</Title>

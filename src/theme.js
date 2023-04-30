@@ -10,7 +10,7 @@ export const theme = {
     footerBg: '#333333',
     red: '#f91515'
   },
-  space: [0, 2, 6, 12, 16, 20, 32, 48, 56, 79, 128, 256],
+  space: [0, 6, 8, 10, 12, 16, 18, 20, 22, 24, 28, 30, 32, 40, 46, 48, 50, 56, 60, 70, 72, 76, 80, 104, 160, 270, 272, 378],
   fonts: {
     body: 'Open Sans, sans-serif',
   },
@@ -33,8 +33,9 @@ export const theme = {
     xs: '1',
     s: '1.35',
     m: '1.375',
-    l: '1.44',
-    xl: '1.5'
+    l: '1.39',
+    xl: '1.44',
+    xxl: '1.5'
   },
   borders: {
     none: 'none',
@@ -46,9 +47,9 @@ export const theme = {
     normal: '5px',
   },
   sizes: {
-    xs: '146px',
-    s: '155px',
-    m: '175px',
-    l: '186px',
+    xs: '2px',
+    s: '35px',
+    m: '460px',
+    l: '590px',
   }
 };

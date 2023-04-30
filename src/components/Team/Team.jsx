@@ -1,16 +1,7 @@
-import {
-  Section,
-  SubTitle,
-  Title,
-  StyledImageGrid,
-  ImageContainer,
-  Overlay,
-  Name,
-} from './Team.styled';
-
 import Container from '../Container';
 import SocialIconsList from '../SocialIconsList';
 import { Box } from '../Box';
+import Picture from '../Picture/Picture';
 
 import jpg11x from '../../images/team/person1.jpg';
 import jpg12x from '../../images/team/person1@2x.jpg';
@@ -25,11 +16,21 @@ import jpg32x from '../../images/team/person3@2x.jpg';
 import webp31x from '../../images/team/person3.webp';
 import webp32x from '../../images/team/person3@2x.webp';
 
+import {
+  Section,
+  SubTitle,
+  Title,
+  StyledImageGrid,
+  ImageContainer,
+  Overlay,
+  Name,
+} from './Team.styled';
+
 const Team = () => {
   return (
     <Container>
       <Section>
-        <Box pb={8}>
+        <Box pb={18}>
           <SubTitle>Who we are</SubTitle>
           <Title>Our Professional Team</Title>
           <SubTitle>
@@ -40,14 +41,13 @@ const Team = () => {
         <StyledImageGrid>
           <div>
             <ImageContainer>
-              <picture>
-                <source
-                  srcSet={`${webp11x} 1x, ${webp12x} 2x`}
-                  type="image/webp"
-                />
-                <source srcSet={`${jpg11x} 1x, ${jpg12x} 2x`} />
-                <img src={jpg11x} alt="People" />
-              </picture>
+              <Picture
+                jpg1x={jpg11x}
+                jpg2x={jpg12x}
+                webp1x={webp11x}
+                webp2x={webp12x}
+                alt="Team member 1"
+              />
               <Overlay>
                 <SocialIconsList opacity={0.8} />
               </Overlay>
@@ -60,14 +60,13 @@ const Team = () => {
 
           <div>
             <ImageContainer>
-              <picture>
-                <source
-                  srcSet={`${webp21x} 1x, ${webp22x} 2x`}
-                  type="image/webp"
-                />
-                <source srcSet={`${jpg21x} 1x, ${jpg22x} 2x`} />
-                <img src={jpg21x} alt="People" />
-              </picture>
+              <Picture
+                jpg1x={jpg21x}
+                jpg2x={jpg22x}
+                webp1x={webp21x}
+                webp2x={webp22x}
+                alt="Team member 2"
+              />
               <Overlay>
                 <SocialIconsList opacity={0.8} />
               </Overlay>
@@ -80,14 +79,13 @@ const Team = () => {
 
           <div>
             <ImageContainer>
-              <picture>
-                <source
-                  srcSet={`${webp31x} 1x, ${webp32x} 2x`}
-                  type="image/webp"
-                />
-                <source srcSet={`${jpg31x} 1x, ${jpg32x} 2x`} />
-                <img src={jpg31x} alt="People" />
-              </picture>
+              <Picture
+                jpg1x={jpg31x}
+                jpg2x={jpg32x}
+                webp1x={webp31x}
+                webp2x={webp32x}
+                alt="Team member 3"
+              />
               <Overlay>
                 <SocialIconsList opacity={0.8} />
               </Overlay>

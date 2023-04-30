@@ -4,10 +4,10 @@ export const Section = styled.section`
   background-color: ${p => p.theme.colors.accent};
   @media screen and (min-width: 768px) {
     display: flex;
-    max-height: 590px;
+    max-height: ${p => p.theme.sizes.l};
   }
   @media screen and (min-width: 1360px) {
-    max-height: 460px;
+    max-height: ${p => p.theme.sizes.m};
   }
 `;
 
@@ -31,18 +31,13 @@ export const SubTitle = styled.p`
 `;
 
 export const Title = styled.h2`
-  font-weight: 400;
-  margin-top: ${p => p.theme.space[4]}px;
-  margin-bottom: 24px;
+  font-weight: ${p => p.theme.fontWeights.normal};
+  margin-top: ${p => p.theme.space[5]}px;
+  margin-bottom: ${p => p.theme.space[6]}px;
   font-size: ${p => p.theme.fontSizes.xl};
   line-height: ${p => p.theme.lineHeights.m};
 `;
 
 export const Text = styled(SubTitle)`
-  margin-bottom: 24px;
-`;
-
-export const Img = styled.img`
-  height: 100%;
-  object-fit: cover;
+  margin-bottom: ${p => p.theme.space[6]}px;
 `;

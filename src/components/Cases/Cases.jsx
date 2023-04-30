@@ -1,5 +1,6 @@
-import { Section, SubTitle, Title, StyledImageGrid } from './Cases.styled';
 import { Box } from '../Box';
+import Picture from '../Picture/Picture';
+import Container from '../Container/Container';
 
 import jpg11x from '../../images/cases/cases1.jpg';
 import jpg12x from '../../images/cases/cases1@2x.jpg';
@@ -25,13 +26,14 @@ import jpg61x from '../../images/cases/cases6.jpg';
 import jpg62x from '../../images/cases/cases6@2x.jpg';
 import webp61x from '../../images/cases/cases6.webp';
 import webp62x from '../../images/cases/cases6@2x.webp';
-import Container from '../Container/Container';
+
+import { Section, SubTitle, Title, StyledImageGrid } from './Cases.styled';
 
 const Cases = () => {
   return (
     <Container>
       <Section id="cases">
-        <Box pb={6}>
+        <Box pb={17}>
           <SubTitle>This is what we do</SubTitle>
           <Title>Business Cases</Title>
           <SubTitle>
@@ -46,14 +48,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp11x} 1x, ${webp12x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg11x} 1x, ${jpg12x} 2x`} />
-              <img src={jpg11x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg11x}
+              jpg2x={jpg12x}
+              webp1x={webp11x}
+              webp2x={webp12x}
+              alt="Case 1"
+            />
           </a>
 
           <a
@@ -62,14 +63,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp21x} 1x, ${webp22x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg21x} 1x, ${jpg22x} 2x`} />
-              <img src={jpg21x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg21x}
+              jpg2x={jpg22x}
+              webp1x={webp21x}
+              webp2x={webp22x}
+              alt="Case 2"
+            />
           </a>
 
           <a
@@ -78,14 +78,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp31x} 1x, ${webp32x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg31x} 1x, ${jpg32x} 2x`} />
-              <img src={jpg31x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg31x}
+              jpg2x={jpg32x}
+              webp1x={webp31x}
+              webp2x={webp32x}
+              alt="Case 3"
+            />
           </a>
 
           <a
@@ -94,14 +93,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp41x} 1x, ${webp42x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg41x} 1x, ${jpg42x} 2x`} />
-              <img src={jpg41x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg41x}
+              jpg2x={jpg42x}
+              webp1x={webp41x}
+              webp2x={webp42x}
+              alt="Case 4"
+            />
           </a>
 
           <a
@@ -110,14 +108,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp51x} 1x, ${webp52x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg51x} 1x, ${jpg52x} 2x`} />
-              <img src={jpg51x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg51x}
+              jpg2x={jpg52x}
+              webp1x={webp51x}
+              webp2x={webp52x}
+              alt="Case 5"
+            />
           </a>
 
           <a
@@ -126,14 +123,13 @@ const Cases = () => {
             data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sapiente!"
           >
-            <picture>
-              <source
-                srcSet={`${webp61x} 1x, ${webp62x} 2x`}
-                type="image/webp"
-              />
-              <source srcSet={`${jpg61x} 1x, ${jpg62x} 2x`} />
-              <img src={jpg61x} alt="People" />
-            </picture>
+            <Picture
+              jpg1x={jpg61x}
+              jpg2x={jpg62x}
+              webp1x={webp61x}
+              webp2x={webp62x}
+              alt="Case 6"
+            />
           </a>
         </StyledImageGrid>
       </Section>

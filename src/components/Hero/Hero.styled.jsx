@@ -7,8 +7,8 @@ import showcaseWebp2x from '../../images/home/showcase@2x.webp';
 export const Section = styled.section`
   height: 100vh;
   text-align: center;
-  padding-top: 160px;
-  padding-bottom: 104px;
+  padding-top: ${p => p.theme.space[25]}px;
+  padding-bottom: ${p => p.theme.space[24]}px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,36 +24,36 @@ export const Section = styled.section`
       url(${showcaseWebp2x}) 2x
     );
   @media screen and (min-width: 768px) {
-    padding-top: 378px;
-    padding-bottom: 378px;
+    padding-top: ${p => p.theme.space[28]}px;
+    padding-bottom: ${p => p.theme.space[28]}px;
   }
   @media screen and (min-width: 1360px) {
-    padding-top: 272px;
-    padding-bottom: 270px;
+    padding-top: ${p => p.theme.space[27]}px;
+    padding-bottom: ${p => p.theme.space[26]}px;
   }
 `;
 
 export const Title = styled.h1`
-  font-weight: 600;
-  font-size: 40px;
-  margin-bottom: 16px;
-  padding: 0 5px;
+  font-weight: ${p => p.theme.fontWeights.semiBold};
+  font-size: ${p => p.theme.fontSizes.xxl};
+  margin-bottom: ${p => p.theme.space[5]}px;
+  padding: 0 ${p => p.theme.space[1]}px;
   @media screen and (min-width: 768px) {
-    font-size: 55px;
+    font-size: ${p => p.theme.fontSizes.xxxl};
   }
 `;
 export const SubTitle = styled.h3`
-  font-size: 26px;
+  font-size: ${p => p.theme.fontSizes.m};
   line-height: 1.23;
-  margin-bottom: 24px;
-  font-weight: 400;
+  margin-bottom: ${p => p.theme.space[9]}px;
+  font-weight: ${p => p.theme.fontWeights.normal};
   @media screen and (min-width: 768px) {
     line-height: 1.2;
-    font-size: 40px;
-    padding: 0 60px;
+    font-size: ${p => p.theme.fontSizes.xxl};
+    padding: 0 ${p => p.theme.space[18]}px;
   }
   @media screen and (min-width: 1360px) {
-    line-height: 1.35;
+    line-height: ${p => p.theme.lineHeights.s};
     padding: 0;
   }
 `;
