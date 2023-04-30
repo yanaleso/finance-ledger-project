@@ -1,32 +1,46 @@
-
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
-  padding: ${p => p.theme.space[3]}px;
-  color: ${p => p.theme.colors.white};
-  background-color: ${p => p.theme.colors.accent};
-  font-family: inherit;
-  font-weight: ${p => p.theme.fontWeights.bold};
-  font-size: ${p => p.theme.fontSizes.m};
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: ${p => p.theme.radii.normal};
-  border-width: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  :hover:not(:disabled), :focus:not(:disabled) {
-    background-color: ${p => p.theme.colors.hover};
+export const Section = styled.section`
+  background-color: ${p => p.theme.colors.contactBg};
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-height: 460px;
   }
+`;
 
-  &:disabled {
-    opacity: 0.4;
-    cursor: initial;
+export const FormContainer = styled.div`
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 51px;
+  padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 32px;
   }
-  
-  svg {
-    @media screen and (min-width: 768px) {
-      margin-right: ${prop => prop.theme.space[2]}px;
-      vertical-align: bottom;
-    }
+  @media screen and (min-width: 1360px) {
+    padding-top: 56px;
+    padding-bottom: 77px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+`;
+
+export const Title = styled.h2`
+  color: ${p => p.theme.colors.secondary};
+  font-weight: 400;
+  margin-bottom: 69px;
+  font-size: ${p => p.theme.fontSizes.xl};
+  line-height: ${p => p.theme.lineHeights.xl};
+`;
+
+export const ImageContainer = styled.div`
+  flex-grow: 1;
+  flex-basis: 47%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;

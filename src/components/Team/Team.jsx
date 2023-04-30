@@ -28,7 +28,7 @@ import webp32x from '../../images/team/person3@2x.webp';
 const Team = () => {
   return (
     <Container>
-      <Section id="team">
+      <Section>
         <Box pb={8}>
           <SubTitle>Who we are</SubTitle>
           <Title>Our Professional Team</Title>

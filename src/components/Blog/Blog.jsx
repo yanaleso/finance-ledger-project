@@ -11,7 +11,6 @@ import {
   SubTitle,
   Title,
   Text,
-  Img,
   ImageContainer,
 } from './Blog.styled';
 
@@ -22,7 +21,7 @@ const Blog = () => {
         <picture>
           <source srcSet={`${webp1x} 1x, ${webp2x} 2x`} type="image/webp" />
           <source srcSet={`${jpg1x} 1x, ${jpg2x} 2x`} />
-          <Img src={jpg1x} alt="Blog" />
+          <img src={jpg1x} alt="Blog" />
         </picture>
       </ImageContainer>
       <Box px={5} pt={7} pb={8} flexGrow={1} flexBasis="50%">

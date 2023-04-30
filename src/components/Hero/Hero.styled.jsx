@@ -5,7 +5,6 @@ import showcaseWebp1x from '../../images/home/showcase.webp';
 import showcaseWebp2x from '../../images/home/showcase@2x.webp';
 
 export const Section = styled.section`
-  width: 100vw;
   height: 100vh;
   text-align: center;
   padding-top: 160px;
@@ -32,7 +31,7 @@ export const Section = styled.section`
     padding-top: 272px;
     padding-bottom: 270px;
   }
-`
+`;
 
 export const Title = styled.h1`
   font-weight: 600;
@@ -42,7 +41,7 @@ export const Title = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 55px;
   }
-`
+`;
 export const SubTitle = styled.h3`
   font-size: 26px;
   line-height: 1.23;
@@ -57,4 +56,4 @@ export const SubTitle = styled.h3`
     line-height: 1.35;
     padding: 0;
   }
-`
+`;

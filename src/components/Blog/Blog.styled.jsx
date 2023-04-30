@@ -39,7 +39,3 @@ export const Title = styled.h2`
 export const Text = styled(SubTitle)`
   margin-bottom: 24px;
 `;
-export const Img = styled.img`
-  height: 100%;
-  object-fit: cover;
-`;
