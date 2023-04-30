@@ -1,5 +1,6 @@
-import { List, Item } from './SocialIconsList.styled';
 import icons from '../../images/icons.svg';
+
+import { List, Item } from './SocialIconsList.styled';
 
 const SocialIconsList = ({ fill, opacity }) => {
   return (

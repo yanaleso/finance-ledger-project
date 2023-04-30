@@ -5,8 +5,8 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   svg {
-    width: 35px;
-    height: 35px;
+    width: ${p => p.theme.sizes.s};
+    height: ${p => p.theme.sizes.s};
     fill: ${p => p.theme.colors.primary};
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,6 +24,6 @@ export const Item = styled.li`
   align-items: center;
   cursor: pointer;
   &:not(:last-child) {
-    margin-right: 25px;
+    margin-right: ${p => p.theme.spaces[9]};
   }
 `;

@@ -6,9 +6,9 @@ export const Section = styled.section`
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  padding-top: 72px;
-  padding-bottom: 50px;
-  color: black;
+  padding-top: ${p => p.theme.spaces[20]}px;
+  padding-bottom: ${p => p.theme.spaces[16]}px;
+  color: ${p => p.theme.colors.secondary};
 `;
 
 export const SubTitle = styled.p`
@@ -20,25 +20,25 @@ export const SubTitle = styled.p`
 `;
 
 export const Title = styled.h2`
-  font-weight: 400;
-  margin-top: ${p => p.theme.space[4]}px;
-  margin-bottom: 24px;
-  font-size: ${p => p.theme.fontSizes.xl};
+  font-weight: ${p => p.theme.fontWeights.normal};
+  margin-top: ${p => p.theme.space[5]}px;
+  margin-bottom: ${p => p.theme.space[6]}px;
+  font-size: ${p => p.theme.fontSizes.xxl};
   line-height: ${p => p.theme.lineHeights.m};
 `;
 
 export const StyledImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
+  gap: 3 ${p => p.theme.space[11]}px;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: ${p => p.theme.space[6]}px;
   }
 
   @media screen and (min-width: 1360px) {
-    gap: 22px;
+    gap: ${p => p.theme.space[8]}px;
   }
 `;
 

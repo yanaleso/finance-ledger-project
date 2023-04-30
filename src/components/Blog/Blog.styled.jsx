@@ -5,7 +5,7 @@ export const Section = styled.section`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
-    max-height: 460px;
+    max-height: ${p => p.theme.sizes.m};
   }
 `;
 
@@ -30,12 +30,12 @@ export const SubTitle = styled.p`
 
 export const Title = styled.h2`
   font-weight: 400;
-  margin-top: ${p => p.theme.space[4]}px;
-  margin-bottom: 24px;
+  margin-top: ${p => p.theme.space[5]}px;
+  margin-bottom: ${p => p.theme.space[6]}px;
   font-size: ${p => p.theme.fontSizes.xl};
   line-height: ${p => p.theme.lineHeights.m};
 `;
 
 export const Text = styled(SubTitle)`
-  margin-bottom: 24px;
+  margin-bottom: ${p => p.theme.space[6]}px;
 `;

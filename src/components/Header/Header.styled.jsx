@@ -6,20 +6,20 @@ export const HeaderWrap = styled.header`
   left: 0;
   display: block;
   width: 100%;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: ${p => p.theme.space[8]}px;
+  padding-bottom: ${p => p.theme.space[8]}px;
   z-index: 1;
   background-color: ${({ inTop, theme }) =>
     inTop ? 'transparent' : theme.colors.secondary};
   opacity: ${({ inTop }) => (inTop ? 1 : 0.8)};
 
   @media screen and (min-width: 768px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: ${p => p.theme.space[5]}px;
+    padding-bottom: ${p => p.theme.space[5]}px;
   }
   @media screen and (min-width: 1360px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: ${p => p.theme.space[12]}px;
+    padding-bottom: ${p => p.theme.space[12]}px;
   }
 `;
 
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
 
 export const NavList = styled.ul`
   display: flex;
-  margin-top: 16px;
+  margin-top: ${p => p.theme.space[5]}px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
@@ -44,16 +44,16 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   &:not(:last-child) {
-    margin-right: 12px;
+    margin-right: ${p => p.theme.space[4]}px;
   }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: ${p => p.theme.space[7]}px;
     }
   }
   @media screen and (min-width: 1360px) {
     &:not(:last-child) {
-      margin-right: 46px;
+      margin-right: ${p => p.theme.space[14]}px;
     }
   }
 `;
@@ -61,8 +61,8 @@ export const NavItem = styled.li`
 export const Link = styled.a`
   position: relative;
   cursor: pointer;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: ${p => p.theme.space[5]}px;
+  padding-bottom: ${p => p.theme.space[5]}px;
   color: inherit;
   &:hover::after,
   &:focus::after {
@@ -72,11 +72,11 @@ export const Link = styled.a`
   &::after {
     content: '';
     position: absolute;
-    bottom: 20px;
+    bottom: ${p => p.theme.space[7]}px;
     left: 0;
     display: block;
     width: 100%;
-    height: 2px;
+    height: ${p => p.theme.sizes.xs};
     border-radius: ${p => p.theme.radii.small};
     background-color: ${p => p.theme.colors.accent};
     opacity: 0;
@@ -85,9 +85,9 @@ export const Link = styled.a`
       transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 768px) {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: ${p => p.theme.space[10]}px;
+    padding-bottom: ${p => p.theme.space[10]}px;
     font-size: ${p => p.theme.fontSizes.xs};
-    line-height: 1.39;
+    line-height: ${p => p.theme.fontHeights.l};
   }
 `;

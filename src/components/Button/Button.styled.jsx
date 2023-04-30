@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  padding: ${p => p.theme.space[4]}px ${p => p.theme.space[6]}px;
+  padding: ${p => p.theme.space[5]}px ${p => p.theme.space[12]}px;
   color: ${p => p.theme.colors.primary};
   font-family: inherit;
   cursor: pointer;
@@ -16,10 +16,10 @@ export const StyledButton = styled.button`
 export const HeroButton = styled(StyledButton)`
   margin: 0 auto;
   align-items: center;
-  gap: 8px;
+  gap: ${p => p.theme.space[2]}px;
   background-color: ${p => p.theme.colors.accent};
   font-size: ${p => p.theme.fontSizes.xs};
-  line-height: 1.39;
+  line-height: ${p => p.theme.lineHeights.l};
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -33,7 +33,7 @@ export const AboutButton = styled(StyledButton)`
   background: transparent;
   border: ${p => p.theme.borders.normal} ${p => p.theme.colors.primary};
   font-size: ${p => p.theme.fontSizes.xxs};
-  line-height: 1.375;
+  line-height: ${p => p.theme.lineHeights.m};
   &:hover,
   &:focus {
     color: ${p => p.theme.colors.accent};
@@ -41,7 +41,7 @@ export const AboutButton = styled(StyledButton)`
   }
   @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSizes.xs};
-    line-height: 1.39;
+    line-height: ${p => p.theme.lineHeights.l};
   }
 `;
 export const BlogButton = styled(AboutButton)`
@@ -52,5 +52,5 @@ export const BlogButton = styled(AboutButton)`
 `;
 export const SubmitButton = styled(HeroButton)`
   margin: 0;
-  padding: ${p => p.theme.space[4]}px ${p => p.theme.space[7]}px;
+  padding: ${p => p.theme.space[5]}px ${p => p.theme.space[12]}px;
 `;

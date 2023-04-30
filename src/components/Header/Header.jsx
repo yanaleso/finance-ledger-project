@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Container from '../Container/Container';
 import Logo from '../Logo/Logo';
+
 import { HeaderWrap, Link, NavItem, NavList, Wrapper } from './Header.styled';
 
 const Header = () => {
