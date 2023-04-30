@@ -72,10 +72,11 @@ export const Link = styled.a`
   &::after {
     content: '';
     position: absolute;
+    bottom: 20px;
     left: 0;
     display: block;
     width: 100%;
-    height: 4px;
+    height: 2px;
     border-radius: ${p => p.theme.radii.small};
     background-color: ${p => p.theme.colors.accent};
     opacity: 0;

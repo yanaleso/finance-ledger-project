@@ -7,13 +7,15 @@ export const theme = {
     contactBg: '#f4f4f4',
     formBorder: '#f5f5f5',
     formText: '#808080',
-    footerBg: '#333333'
+    footerBg: '#333333',
+    red: '#f91515'
   },
   space: [0, 2, 6, 12, 16, 20, 32, 48, 56, 79, 128, 256],
   fonts: {
     body: 'Open Sans, sans-serif',
   },
   fontSizes: {
+    xxxs: '14px',
     xxs: '16px',
     xs: '18px',
     s: '20px',

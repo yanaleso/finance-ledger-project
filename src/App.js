@@ -11,13 +11,15 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Hero/>
-      <About />
-      <Cases />
-      <Blog />
-      <Team/>
-      <Contact/>
-      <Footer/>
+      <main>
+        <Hero />
+        <About />
+        <Cases />
+        <Blog />
+        <Team />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

@@ -4,13 +4,16 @@ export const Section = styled.section`
   background-color: ${p => p.theme.colors.accent};
   @media screen and (min-width: 768px) {
     display: flex;
+    max-height: 590px;
+  }
+  @media screen and (min-width: 1360px) {
     max-height: 460px;
   }
 `;
 
 export const ImageContainer = styled.div`
   flex-grow: 1;
-  flex-basis: 47%;
+  flex-basis: 45%;
 
   img {
     width: 100%;

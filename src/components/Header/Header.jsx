@@ -8,7 +8,7 @@ const Header = () => {
   const [inTop, setInTop] = useState(true);
 
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 70) {
       setInTop(false);
     } else {
       setInTop(true);
@@ -41,9 +41,6 @@ const Header = () => {
               </NavItem>
               <NavItem>
                 <Link href="#blog">Blog</Link>
-              </NavItem>
-              <NavItem>
-                <Link href="#team">Team</Link>
               </NavItem>
               <NavItem>
                 <Link href="#contact">Contact</Link>

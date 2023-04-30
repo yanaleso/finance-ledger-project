@@ -5,7 +5,10 @@ import 'lightbox2/dist/css/lightbox.css';
 export const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 120px;
+    @media screen and (min-width: 768px) {
+      scroll-padding-top: 70px;
+    }
   }
   body {
     margin: 0;
