@@ -88,6 +88,6 @@ export const Link = styled.a`
     padding-top: ${p => p.theme.space[10]}px;
     padding-bottom: ${p => p.theme.space[10]}px;
     font-size: ${p => p.theme.fontSizes.xs};
-    line-height: ${p => p.theme.fontHeights.l};
+    line-height: ${p => p.theme.lineHeights.l};
   }
 `;

@@ -24,6 +24,6 @@ export const Item = styled.li`
   align-items: center;
   cursor: pointer;
   &:not(:last-child) {
-    margin-right: ${p => p.theme.spaces[9]};
+    margin-right: ${p => p.theme.space[9]}px;
   }
 `;
