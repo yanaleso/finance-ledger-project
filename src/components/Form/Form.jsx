@@ -9,6 +9,7 @@ import {
   Label,
 } from './Form.styled';
 import Button from '../Button/Button';
+import { handleSubmit } from '../../services/netlifyForm';
 
 const Form = () => {
   const initialValues = {
@@ -29,7 +30,14 @@ const Form = () => {
   });
 
   return (
-    <Formik initialValues={initialValues} validationSchema={contactSchema}>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={contactSchema}
+      onSubmit={(values, { resetForm }) => {
+        handleSubmit(values);
+        resetForm();
+      }}
+    >
       <FormBox name="contact" method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <FieldWrapper>
